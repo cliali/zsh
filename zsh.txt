@@ -1,0 +1,25 @@
+sudo dnf install zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
+
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+
+source .zshrc 
+
+change font for show icons
+SF Pro Display Regular
+MesloLGS NF
+
+gnome-terminal - cobalt 2
+bash -c  "$(wget -qO- https://git.io/vQgMr)"
+
+sudo visudo
+Defaults    !tty_tickets
+Defaults timestamp_timeout = -1
+

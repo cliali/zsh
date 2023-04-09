@@ -25,20 +25,17 @@ sudo pacman -S zsh
 ```
 
 
-## 2. give permission to execute the script
-
-```bash
-sudo chmod +x zsh.sh
-```
-
-
 ## Notice
 
 full screen the terminal for powerlevel10k config
 
 
-## 3. run the script
+## 2. Run the script
 
 ```bash
+wget -q https://raw.githubusercontent.com/cliali/zsh/main/zsh.sh -O zsh.sh 
+
+chmod +x zsh.sh
+
 ./zsh.sh
 ```
